@@ -2,15 +2,15 @@
 
 class Sandbox : public Zirconium::Application {
 public:
-	Sandbox() {
+    Sandbox() {
 
-	}
+    }
 
-	~Sandbox() {
-	
-	}
+    ~Sandbox() {
+    
+    }
 };
 
 Zirconium::Application* Zirconium::CreateApplication() {
-	return new Sandbox();
+    return new Sandbox();
 }

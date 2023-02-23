@@ -2,15 +2,15 @@
 #include "Core.h"
 
 namespace Zirconium {
-	class ZIRCONIUM_API Application
-	{
-	public:
-		Application();
-		virtual ~Application();
+    class ZIRCONIUM_API Application
+    {
+    public:
+        Application();
+        virtual ~Application();
 
-		void Run();
-	};
+        void Run();
+    };
 
-	// To be defined in client.
-	Application* CreateApplication();
+    // To be defined in client.
+    Application* CreateApplication();
 }

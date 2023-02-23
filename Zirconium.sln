@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{352CD55D-21E4-16AB-8AEB-EF0676C2B19B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zirconium", "Zirconium\Zirconium.vcxproj", "{45195103-B183-057A-FAC1-B61F666BE3CE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zirconium", "premakes\Zirconium\Zirconium\Zirconium.vcxproj", "{45195103-B183-057A-FAC1-B61F666BE3CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{EB5FC2C6-D72D-B6CC-C0C1-26F3AC2E9231}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "premakes\Sandbox\Sandbox\Sandbox.vcxproj", "{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,20 +16,24 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Debug|x64.ActiveCfg = Debug|x64
-		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Debug|x64.Build.0 = Debug|x64
-		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Dist|x64.ActiveCfg = Dist|x64
-		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Dist|x64.Build.0 = Dist|x64
-		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Release|x64.ActiveCfg = Release|x64
-		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Release|x64.Build.0 = Release|x64
 		{45195103-B183-057A-FAC1-B61F666BE3CE}.Debug|x64.ActiveCfg = Debug|x64
 		{45195103-B183-057A-FAC1-B61F666BE3CE}.Debug|x64.Build.0 = Debug|x64
 		{45195103-B183-057A-FAC1-B61F666BE3CE}.Dist|x64.ActiveCfg = Dist|x64
 		{45195103-B183-057A-FAC1-B61F666BE3CE}.Dist|x64.Build.0 = Dist|x64
 		{45195103-B183-057A-FAC1-B61F666BE3CE}.Release|x64.ActiveCfg = Release|x64
 		{45195103-B183-057A-FAC1-B61F666BE3CE}.Release|x64.Build.0 = Release|x64
+		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Debug|x64.ActiveCfg = Debug|x64
+		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Debug|x64.Build.0 = Debug|x64
+		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Dist|x64.ActiveCfg = Dist|x64
+		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Dist|x64.Build.0 = Dist|x64
+		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Release|x64.ActiveCfg = Release|x64
+		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{45195103-B183-057A-FAC1-B61F666BE3CE} = {352CD55D-21E4-16AB-8AEB-EF0676C2B19B}
+		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0} = {EB5FC2C6-D72D-B6CC-C0C1-26F3AC2E9231}
 	EndGlobalSection
 EndGlobal
